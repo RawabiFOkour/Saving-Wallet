@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Dashboard\HomeController;
+use App\Http\Controllers\Dashboard\SubCategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('user/home', [HomeController::class, 'index'])->name('user')->middleware('role');
+Route::get('admin/home', [HomeController::class, 'adminIndex'])->name('admin');
+Route::get('user/all_transactions', [HomeController::class, 'getAllUserTransactions'])->name('user.all_transactions');
+
+
+
+Route::resource('subCategories', SubCategoryController::class);
