@@ -20,3 +20,7 @@
                 password=> 12341234
                 
           ______________________________________
+          
+# using AdminLTE laravel/ui authentication scaffolding  :-  https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation    
+          
+          
