@@ -8,7 +8,7 @@
    5. run command : php artisan migrate:fresh --seed
    6. run command : php artisan serve
 
-# After run this command (php artisan migrate:fresh --seed) is attached above, you can use seeder data to login (User or admin).
+# After run this command (php artisan migrate:fresh --seed) is attached above, you can use seeder data to login (User or admin) and Category(Income,Expenses).
 
 # 1.User Seeder Data
 
