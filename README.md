@@ -10,7 +10,7 @@
 
 # After run this command (php artisan migrate:fresh --seed) is attached above, you can use seeder data to login (User or admin).
 
-1.User Seeder Data
+# 1.User Seeder Data
 
 # User =>
                 email => user@gmail.com
@@ -23,9 +23,9 @@
                 password=> 12341234
                 
           ______________________________________
-2. Category Seeder
+# 2. Category Seeder
            
- # Category seeder (Income,Expenses)
+# Category seeder (Income,Expenses)
           
 # Using AdminLTE laravel/ui authentication scaffolding  :-  https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation    
           
